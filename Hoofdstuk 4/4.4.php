@@ -1,31 +1,35 @@
 <?php
 /**
- * User: Isahak Farah
+ * User: Isahak farah
  * Date:
  * Time:
- * File: Opdracht4.4.php
+ * File:
  */
 
 ?>
 
 <?php
+include "../includes/Header.php"
+?>
+
+<?php
 echo "<h1>oefening 4.4</h1>";
 $nu = strtotime("now");
-$datumVandaag = date('d-m-y', $nu);
+$todayDate = date('d-m-y', $nu);
 
-$datumDag = date('w', $nu);
-echo "Vandaag is het de ".$datumDag. " dag en de datum is ".$datumVandaag;
+$dagDatum = date('w', $nu);
+echo "Vandaag is het de ".$dagDatum. " dag en de datum is ".$todayDate;
 echo "<br>";
 $dagenWeek = array("zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag");
-echo "Vandaag is het ".$dagenWeek[$datumDag] . " en datum is ". $datumVandaag;
+echo "Vandaag is het ".$dagenWeek[$dagDatum] . " en datum is ". $todayDate;
 
 $nu = strtotime('+1 days');
 $datumVandaag = date('d-m-y', $nu);
-$datumDag = date('w',$nu);
+$dagDatum = date('w',$nu);
 
-echo "<br>Morgen is het de ".$datumDag. " dag en de datum is ".$datumVandaag;
+echo "<br>Morgen is het de ".$dagDatum. " dag en de datum is ".$todayDate;
 echo"<br>";
-echo "Morgen is het ".$dagenWeek[$datumDag]. " en de datum is ". $datumVandaag;
+echo "Morgen is het ".$dagenWeek[$dagDatum]. " en de datum is ". $todayDate;
 ?>
 
 <?php
@@ -46,5 +50,5 @@ echo $test
 ?>
 
 <?php
-
+include "../includes/Footer.php"
 ?>

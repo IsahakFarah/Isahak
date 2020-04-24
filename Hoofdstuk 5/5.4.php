@@ -3,33 +3,25 @@
  * User: Isahak Farah
  * Date:
  * Time:
- * File: opdracht5.4.php
+ * File:
  */
 ?>
 
 <?php
 include "../Includes/Header.php"
 ?>
-<style>
-    .groen
-    {
-        color: green;
-    }
 
-    .rood
-    {
-        color: red;
-    }
-</style>
 <form action="opdracht5.4.php" method="post">
     <label>Komt er een ambulance aan?</label>
     <label><input name="ambulanceComing" type="radio" value="ja">ja</label>
     <label><input name="ambulanceComing" type="radio" value="nee">nee</label><br>
 
-    <label>Stoplicht kleur?</label>
-    <label><input name="trafficLightColor" type="radio" value="groen">Groen</label>
-    <label><input name="trafficLightColor" type="radio" value="oranje">Oranje</label>
-    <label><input name="trafficLightColor" type="radio" value="red">Rood</label><br>
+    <label>
+        Stoplicht kleur?
+    </label>
+    <label><input name="trafficLightColor" type="radio" value="Groen">Groen</label>
+    <label><input name="trafficLightColor" type="radio" value="Oranje">Oranje</label>
+    <label><input name="trafficLightColor" type="radio" value="rood">Rood</label><br>
     <input type="submit" name="submit" value="submit">
 </form>
 
@@ -61,6 +53,4 @@ ambulance aan.";
 }
 ?>
 
-<?php
-include "../Includes/Footer.php"
-?>
+

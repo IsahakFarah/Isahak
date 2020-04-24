@@ -6,9 +6,7 @@
  * File: opdracht3.1.php
  */
 ?>
-
 <!DOCTYPE html>
-
 <html lang="nl">
 <head>
     <title>
